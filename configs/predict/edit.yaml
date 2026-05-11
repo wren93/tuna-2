@@ -31,7 +31,7 @@ inference:
   pipe: Tuna2PixelPipeline
   use_ckpt: true
   ckpt_path: ./checkpoints/tuna_2_pixel_7b.pt
-  output_dir: ./outputs/predictions/edit
+  output_dir: ${hydra:runtime.output_dir}
   generation_mode: edit
   use_chat_template: false
   add_aspect_ratio_embeds: ${model.add_aspect_ratio_embeds}

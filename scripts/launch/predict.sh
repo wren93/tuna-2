@@ -85,7 +85,7 @@ while [[ $# -gt 0 ]]; do
         --output)     OUTPUT="$2"; shift 2 ;;
         --steps)      EXTRA_ARGS+=("inference.num_inference_steps=$2"); shift 2 ;;
         --guidance)   EXTRA_ARGS+=("inference.guidance_scale=$2"); shift 2 ;;
-        --seed)       EXTRA_ARGS+=("inference.seed=$2"); shift 2 ;;
+        --seed)       EXTRA_ARGS+=("+inference.seed=$2"); shift 2 ;;
         --negative)   EXTRA_ARGS+=("inference.negative_prompt='$2'"); shift 2 ;;
         *)            EXTRA_ARGS+=("$1"); shift ;;
     esac
@@ -165,7 +165,7 @@ HYDRA_ARGS=(
 if [[ "$TASK" == "edit" ]]; then
     HYDRA_ARGS+=("image_path=$IMAGE" "instruction='$PROMPT'")
     # For edit, prompt is the instruction
-    unset 'HYDRA_ARGS[3]'  # remove the prompt= line
+    unset 'HYDRA_ARGS[4]'  # remove the prompt= line
 fi
 
 export HF_HUB_OFFLINE="${HF_HUB_OFFLINE:-1}"
