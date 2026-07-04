@@ -41,7 +41,7 @@ inference:
   num_images_per_prompt: 1
   num_inference_steps: 50
   guidance_scale: 3
-  noise_scale: 8
+  noise_scale: 2
   shift: 3
   sampling_method: euler
   cfg_interval: [0, 1.0]

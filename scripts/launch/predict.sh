@@ -121,7 +121,8 @@ if [[ "$TASK" == "t2i" ]]; then
             EXTRA_ARGS+=("inference.pipe=Tuna2PixelPipeline"
                          "inference.generation_mode=t2i_pixel"
                          "inference.guidance_scale=3"
-                         "inference.sampling_method=euler") ;;
+                         "inference.sampling_method=euler"
+                         "inference.noise_scale=8") ;;
         siglip_pixel)
             EXTRA_ARGS+=("inference.pipe=Tuna2RPixelPipeline"
                          "inference.generation_mode=t2i_pixel"

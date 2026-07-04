@@ -61,8 +61,8 @@ class Tuna2RPixel(SiglipMixin, TunaInnerBase):
     @register_to_config
     def __init__(
         self,
-        siglip_model_id: str = "google/siglip2-so400m-patch16-384",
-        siglip_image_size: int = 384,
+        siglip_model_id: str = "google/siglip2-so400m-patch16-512",
+        siglip_image_size: int = 512,
         siglip_feature_layer: int = -1,
         llm_vocab_size=None,
         llm_model_path: str = "Qwen/Qwen2.5-7B-Instruct",
