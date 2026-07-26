@@ -4,7 +4,7 @@
 
 _target_: tuna.models.tuna.TunaModel
 
-siglip_model_id: "google/siglip2-so400m-patch16-512"
+siglip_model_id: "configs/pretrained/siglip2-so400m-patch16-512"
 siglip_image_size: 32
 siglip_patch_size: 1
 siglip_num_channels: 48

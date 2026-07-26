@@ -5,7 +5,7 @@ _target_: tuna.models.tuna_2r_pixel.Tuna2RPixelModel
 _recursive_: false
 
 # SigLIP2 uniencoder config
-siglip_model_id: "google/siglip2-so400m-patch16-512"
+siglip_model_id: "configs/pretrained/siglip2-so400m-patch16-512"
 # image_size override — checkpoint was trained at 512 so position_embedding is
 # [1024, 1152]. With pretrained 384 it would be [576, 1152].
 siglip_image_size: 512
