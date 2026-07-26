@@ -13,7 +13,7 @@ siglip_image_size: 32
 siglip_patch_size: 1
 siglip_num_channels: 48
 siglip_feature_layer: -2
-vae_model_id: "Wan-AI/Wan2.2-T2V-5B"
+vae_model_id: "ckpts/Wan2.2_VAE.pth"
 
 llm_model_path: "Qwen/Qwen2.5-7B-Instruct"
 load_stage1_model: null
